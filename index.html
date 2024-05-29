@@ -674,6 +674,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var AKO_BOT_domain = 'https://bots.infra.ako.ai/';
+    var AKO_BOT_botHTMLPath = AKO_BOT_domain+'index.html'; 
+    var AKO_BOT_head = document.getElementsByTagName('head')[0];
+    var AKO_BOT_script = document.createElement('script');
+    AKO_BOT_script.type = 'text/javascript';
+    AKO_BOT_script.src = AKO_BOT_domain + 'chatplugin.js';
+    AKO_BOT_head.appendChild(AKO_BOT_script);
+    var AKO_BOT_iid = 'OhuGELbSFjgWGCOHzTxQUxXlpGVekXnlezdvtLeFKrnsqPkUydcthXGNOzHoOlUa';
+    </script>
 
 </body>
 
