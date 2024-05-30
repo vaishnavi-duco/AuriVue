@@ -101,15 +101,18 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
+body{
+    font-family: 'Lexend', sans-serif;
+}
+
 html, body {
-  font-family: 'Poppins', sans-serif;
+
   font-weight: 400;
   background-color: var(--bg);
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 a {
   color: var(--blue);
   text-decoration: none;
@@ -209,6 +212,7 @@ global styles
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
   transition: all .5s;
+    font-size: 14px;
 }
 
 .border-first-button a:hover {
@@ -329,8 +333,8 @@ preloader
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 105px;
+  bottom: 30px;
   z-index: 996;
   background: var(--blue);
   width: 40px;
