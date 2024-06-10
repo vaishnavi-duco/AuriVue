@@ -366,7 +366,12 @@ global styles
   }
 }
 
-
+@supports (-webkit-overflow-scrolling: touch) {
+    #header .logo img {
+        max-height: 70px;
+        max-width: 70px;
+    }
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -1683,6 +1688,7 @@ Footer Style
 responsive
 --------------------------------------------- 
 */
+
 
 @media (max-width: 992px) {
   form#contact {
