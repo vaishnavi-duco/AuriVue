@@ -352,12 +352,14 @@
     color: #fff;
   }
   
-  /* #header .logo img {
-   max-height: 70px;
-     height: auto;
-     max-width: 100%;
+  /*
+  #header .logo img {
+    max-height: 70px;
+      height: auto;
+      max-width: 100%;
   }
-   */
+  */
+  
   .scrolled-offset {
     margin-top: 70px;
   }
@@ -371,16 +373,16 @@
   @supports (-webkit-overflow-scrolling: touch) {
       #header .logo img {
            max-height: 70px;
-          height: auto;
-          max-width: 100%;
+  /*        height: auto;*/
+          max-width: 70px;
   }
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
       #header .logo img {
           max-height: 70px;
-          height: auto;
-          max-width: 100%;
+  /*        height: auto;*/
+          max-width: 70px;
       }
   }
   
