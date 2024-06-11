@@ -352,12 +352,12 @@
     color: #fff;
   }
   
-  #header .logo img {
-  /*  max-height: 70px;*/
-  /*    height: auto;*/
-  /*    max-width: 100%;*/
+  /* #header .logo img {
+   max-height: 70px;
+     height: auto;
+     max-width: 100%;
   }
-  
+   */
   .scrolled-offset {
     margin-top: 70px;
   }
