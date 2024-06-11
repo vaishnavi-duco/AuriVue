@@ -952,10 +952,23 @@
   --------------------------------------------- 
   */
   #features {
-    padding: 130px 0px;
+    padding: 50px 0px;
     position: relative;
    text-align: center;
   }
+  #features:after {
+    content: '';
+    background-image: url(../img/benefits-left-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.8;
+    right: 500px;
+    bottom: 600px;
+    width: 361px;
+    height: 368px;
+    z-index: 0;
+  }
+  
   #features .section-heading {
     text-align: center;
     margin-bottom: 80px;
@@ -967,7 +980,6 @@
     margin-top: 10px;
       max-width: 90%;
       margin: 0 auto;
-  
   }
   
   #features .icon-boxes {
@@ -983,8 +995,8 @@
     box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
-    z-index: 1;
-      margin-bottom: 30px;
+    z-index: 100;
+    margin-bottom: 30px;
   }
   
   #features .icon-box .title {
@@ -1190,7 +1202,7 @@
   # Modules Section
   --------------------------------------------------------------*/
   .modules{
-      padding-top: 150px;
+      padding-top: 100px;
       text-align: center;
   }
   .modules .section-heading p {
@@ -1263,7 +1275,7 @@
     position: absolute;
   /*    transform: rotate(-20deg);*/
     left: 0px;
-    top: 4000px;
+    top: 3000px;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -1853,16 +1865,16 @@
       max-width: 30px;
       margin-left: 5px;
     }
-    .about-us, #features, .benefits, .whyaurivue{
-          padding-top: 0;
-      } 
+  
     .main-banner .info-stat {
       margin-bottom: 15px;
     }
     .about-us .container{
         max-width: 90%;
       }
-      
+    .about-us, .modules{
+          padding-top: 0px;
+      }
     .about-us .right-image img{
   /*        width: 100%;*/
           height: 100%;
@@ -1879,7 +1891,7 @@
       #features .container{
           max-width: 90%;
       }
-      #features{
+      #features, .modules{
           padding-bottom: 50px;
       }
       
@@ -1890,7 +1902,6 @@
       #features .row .icon-box{
           margin-bottom: 0px;
       }
-      
       .benefits .container{
           max-width: 90%;
       }
@@ -1912,10 +1923,10 @@
     .benefits .icon img {
       margin: 0px;
     }
-    .modules, .whyaurivue, #contact{
+    .whyaurivue, #contact, .benefits{
           padding-top: 70px;
       }
-      .modules .container{
+    .modules .container{
           max-width: 90%;
       }
     .whyaurivue .row{
