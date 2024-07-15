@@ -155,25 +155,25 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Maintance Problems</a></h4>
+                <h4>Modular, Scalable & Extendable</h4>
 <!--                <p>Lorem Ipsum Text</p>-->
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">24/7 Support &amp; Help</a></h4>
+                <h4>Easy Deployment</h4>
 <!--                <p>Lorem Ipsum Text</p>-->
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Fixing Issues About</a></h4>
+                <h4>Integrates with AI</h4>
 <!--                <p>Lorem Ipsum Text</p>-->
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Co. Development</a></h4>
+                <h4>Global Support</h4>
 <!--                <p>Lorem Ipsum Text</p>-->
               </div>
             </div>
@@ -519,6 +519,7 @@
 
 
     <!-- ======= Contact Section ======= -->
+    <!--
     <section id="contact" class="contact">
       <div class="container">
 
@@ -591,7 +592,109 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    -->
+      
+      
+      
+   <section id="contact" class="contact">
+  <div class="container">
+
+    <div class="col-lg-12">
+      <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+        <h6>GET YOUR FREE DEMO</h6>
+        <h4>Grow With Us  <em>Now</em></h4>
+        <div class="line-dec"></div><br>
+        <p>We’re here to help you unlock the full potential of your data with AuriVue. Contact us today to learn more about our solutions and how we can assist you in achieving your business goals.</p>
+      </div>
+    </div>
+      
+      
+      <!--
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.7495830825164!2d174.76255977667688!3d-36.848472979491284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4db682dfeed5%3A0xd4994acee7bc0bc6!2sDuco%20Consultancy!5e0!3m2!1sen!2sin!4v1716890589982!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        </div>
+        -->
+
+    <div class="row mt-5">
+        <!--
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Level 16/191 Queen Street, Auckland CBD, Auckland 1010, New Zealand</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+          -->
+        
+    <div class="col-lg-12 mt-5 mt-lg-0">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+        <div class="form-group dropdown mt-3">
+            <label for="ms_dynamics" class="form-label">Are you already live with Microsoft Dynamics 365 Finance and Operations?</label>
+            <select class="form-control" name="ms_dynamics" id="ms_dynamics" required>
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        <div class="form-group dropdown mt-3" id="tool_used_group" style="display: none;">
+            <label for="tool_used" class="form-label">If yes, what tool do you use to extract data from Microsoft Dynamics 365 Finance and Operations?</label>
+            <select class="form-control" name="tool_used" id="tool_used">
+              <option value="">Select an option</option>
+              <option value="BYOD">BYOD</option>
+              <option value="Data lake">Data lake</option>
+              <option value="OData/Power BI">OData/Power BI</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+         
+          
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+      
+      
+      
+      <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -647,6 +750,27 @@
     <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+    
+    
+    <!--Script for form conditional logic in questions-->
+    
+    <script>
+document.getElementById('ms_dynamics').addEventListener('change', function() {
+  var toolUsedGroup = document.getElementById('tool_used_group');
+  var toolUsed = document.getElementById('tool_used');
+  if (this.value === 'yes') {
+    toolUsedGroup.style.display = 'block';
+    toolUsed.setAttribute('required', 'required');
+  } else {
+    toolUsedGroup.style.display = 'none';
+    toolUsed.removeAttribute('required');
+  }
+});
+</script>
+    
+    
+    
+    
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
