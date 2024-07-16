@@ -9,6 +9,7 @@
   --teal3: #09434c;
   --teal4: #031619;
   --teal5: #051521;
+  --gradient: linear-gradient(90deg, rgba(34, 255, 241, 1) 0%, rgba(23, 165, 177, 1) 40%, rgba(16, 111, 119, 1) 100%);
       
    /** CSS SECONDARY COLORS */
   --blue: #233572;
@@ -195,8 +196,12 @@
   
   .section-heading h4 em {
     font-style:italic;
-    color: var(--teal);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-weight: 800;
+    padding: 0px 10px 0px 0px;
       
   }
   
